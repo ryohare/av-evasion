@@ -36,7 +36,7 @@ Using the above simple technique, the AMSI disabling code can be run without int
 The 'traditional' way to executing powershell payloads is now flagged by AMSI as suspicious. In testing, using just `-enc` was found to bypass these detections.
 ```powershell
 # traditional method
-Powershell -noP -sta -w 1 -enc <BASE-64-STRING>
+Powershell -noP -sta -w 1 -enc <BASE_64_STRING>
 ```
 Breaking it down, each arg:
 * -noP
