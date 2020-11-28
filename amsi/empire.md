@@ -15,7 +15,7 @@ back
 listeners
 launcher powershell test
 ```
-This will generate a powershell one-liner to drop on the victim machine. Discussed in [amsi basics](basic-bypass.md#Execution Methods), The methods in which powershell is being invoked will likely be flagged by AMSI or some other AV vendor as suspicious behavior. However, we will still run it to see how it fairs. Note, in this example I removed that `-w 1` because it hides the window which would prevent us from seeing the result without looking through log files.
+This will generate a powershell one-liner to drop on the victim machine. Discussed in [amsi basics](basic-bypass.md#execution-methods), The methods in which powershell is being invoked will likely be flagged by AMSI or some other AV vendor as suspicious behavior. However, we will still run it to see how it fairs. Note, in this example I removed that `-w 1` because it hides the window which would prevent us from seeing the result without looking through log files.
 ```powershell
 powershell -noP -sta -enc $BASE_64_PAYLOAD
 ```
